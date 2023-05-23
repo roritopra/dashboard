@@ -1,0 +1,33 @@
+
+In JavaScript, static variables are defined on the class itself, rather than on instances of the class. This means that there is only one copy of the static variable, which is shared by all instances of the class.
+
+Static variables are typically used to store values that are shared by all instances of the class, such as configuration options or global counters.
+
+The .filter() method is a built-in JavaScript method that is used to filter an array and return a new array containing only the elements that pass a specified test or condition. The method creates a new array, and it does not modify the original array.
+
+The .filter() method accepts a callback function as its argument. The callback function takes three arguments: the current element being processed, the index of the current element, and the array being filtered.
+
+Short forms of days:
+
+Sun
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+
+Short forms of months:
+
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+Nov
+Dec
