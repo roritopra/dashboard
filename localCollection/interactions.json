@@ -122,50 +122,14 @@
     },
     {
       "id": 21,
-      "date": "Tue May 23 2023",
-      "timeStamp": "16:39",
+      "date": "Thu May 25 2023",
+      "timeStamp": "23:38",
       "OS": "Windows"
     },
     {
       "id": 22,
-      "date": "Tue May 23 2023",
-      "timeStamp": "16:41",
-      "OS": "Windows"
-    },
-    {
-      "id": 23,
-      "date": "Tue May 23 2023",
-      "timeStamp": "16:41",
-      "OS": "Windows"
-    },
-    {
-      "id": 24,
-      "date": "Tue May 23 2023",
-      "timeStamp": "16:41",
-      "OS": "Windows"
-    },
-    {
-      "id": 25,
-      "date": "Tue May 23 2023",
-      "timeStamp": "16:41",
-      "OS": "Windows"
-    },
-    {
-      "id": 26,
-      "date": "Tue May 23 2023",
-      "timeStamp": "18:27",
-      "OS": "Windows"
-    },
-    {
-      "id": 27,
-      "date": "Tue May 23 2023",
-      "timeStamp": "18:27",
-      "OS": "Windows"
-    },
-    {
-      "id": 28,
-      "date": "Tue May 23 2023",
-      "timeStamp": "18:39",
+      "date": "Thu May 25 2023",
+      "timeStamp": "23:39",
       "OS": "Windows"
     }
   ]

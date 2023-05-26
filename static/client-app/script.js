@@ -8,6 +8,7 @@ const inputEmail = document.querySelector('#email');
 //const inputDOB = document.querySelector('#dob');
 const inputPhone = document.querySelector('#phone');
 const inputPrivacy = document.querySelector('#privacy-agreement');
+const inputLocation = document.querySelector('#location');
 
 console.log(formInputs)
 let inputStates = {
@@ -65,6 +66,7 @@ form.addEventListener('submit', (e) => {
         privacyAgreement: inputPrivacy.checked,
         date: getCurrentDate(),
         timeStamp: getCurrentHour(),
+        location: inputLocation.value
     };
     newInteraction = {
         OS: getBrowserOS(),

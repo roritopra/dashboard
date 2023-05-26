@@ -6,6 +6,7 @@ class View {
     static inputEmail = document.querySelector('#email');
     static inputPhone = document.querySelector('#phone');
     static inputPrivacy = document.querySelector('#privacy-agreement');
+    static inputLocation = document.querySelector('#location'); 
     static submitBtn = document.querySelector('#submit-btn');
     static noLeadBtn = document.querySelector('#nolead-btn');
 
@@ -98,8 +99,9 @@ class View {
             let privacyAgreement = View.inputPrivacy.checked;
             let date = this.getCurrentDate();
             let timeStamp = this.getCurrentHour();
+            let location = View.inputLocation.value;
 
-            let newLead = { name, email, phone, privacyAgreement, OS, date, timeStamp };
+            let newLead = { name, email, phone, privacyAgreement, OS, date, timeStamp, location };
             this.onSubmitLead(newLead);
             this.resetInputs();
         });

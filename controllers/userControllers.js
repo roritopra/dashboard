@@ -16,8 +16,12 @@ export const postUserData = (req, res) => {
       privacyAgreement: newLead.privacyAgreement,
       date: newLead.date,
       timeStamp: newLead.timeStamp,
+      location: newLead.location,
       OS: newLead.OS
     };
+
+    console.log('USER --------', jsonUser);
+
     const jsonInteraction = {
       id: jsonDataInteractions.interactions.length + 1, // generate new user ID
       privacyAgreement: newInteraction.privacyAgreement,

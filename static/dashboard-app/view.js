@@ -1,13 +1,14 @@
 class View {
     static barItem = document.querySelector('#myBarChart');
     static doughnutItem = document.querySelector('#myDoughnutChart');
-    static lineItem = document.querySelector('#myLineChart');
+    static lineItem = document.querySelector('#locationChart');
     static fiveLeadsTable = document.querySelector('table');
 
     constructor() {
 
         this.doughnutChart;
         this.barChart;
+        this.locationChart;
     }
 
     getHello() {
@@ -64,23 +65,21 @@ class View {
         //this.doughnutChartUpdate(this.doughnutChart);
     }
 
-    getLineChart() {
-        const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    getLocationChart() {
+        const labels = ['Pance', 'Ciudad Jardín', 'Pereira'];
         const data = {
             labels: labels,
             datasets: [{
                 label: 'My First Dataset',
-                data: [65, 59, 80, 81, 56, 55, 40],
-                fill: false,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1
+                data: [1, 1, 1],
+                borderWidth: 1
             }]
         };
         const config = {
-            type: 'line',
+            type: 'bar',
             data: data,
         };
-        new Chart(View.lineItem, config);
+        this.locationChart = new Chart(View.lineItem, config);
     }
 
     updateTable(newData) {
@@ -105,6 +104,12 @@ class View {
         this.barChart.update();
     }
 
+    // [pance: number, ciudad-jardin: number, pereira: number]
+    updateLocationChart(newDataset) {
+        this.locationChart.data.datasets[0].data = newDataset;
+        this.locationChart.update();
+    }
+
     updateDoughnutChart(newDataset) {
         //console.log(this.doughnutChart);
         //console.log('Hey within Update doughnutChart');
@@ -119,7 +124,7 @@ class View {
 
         this.getBarChart();
         this.getDoughnutChart();
-        this.getLineChart();
+        this.getLocationChart();
 
     }
 

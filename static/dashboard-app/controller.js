@@ -29,6 +29,7 @@ function controller(view, socket) {
         view.updateTable(kpi.lastFiveLeads);
         view.updateDoughnutChart([kpi.osPopulatiry["Android"], kpi.osPopulatiry["iOS"], kpi.osPopulatiry["Other"]]);
         view.updateBarChart(kpi.visitsByDay);
+        /* view.updateLocationChart() */
     })();
 
     const updateRealTime = async () => {
